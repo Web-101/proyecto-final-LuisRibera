@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine Nur</title>
+    <link rel="stylesheet" href="cartelera.css">
+</head>
+
+<body>
+    <header class="header_principal">
+        <h1 class="titulo_cine">Cine <span class="texto_verde">Nur</span></h1>
+    </header>
+
+    <main class="contenido_principal">
+        <section class="carrusel" aria-label="Peliculas_destacadas">
+            <figure class="tarjeta_peli_destacada">
+                <img src="banner_peliculas/scary_movie_6.jpg" alt="Banner de Scary Movie 6" class="img_destacada">
+                <figcaption class="titulo_destacado">Scary Movie 6</figcaption>
+            </figure>
+
+            <div class="animacion_carrusel">
+                <button class="punto_carrusel_activo" aria-label="Ver Scary Movie 6"></button>
+                <button class="punto_carrusel" aria-label="Ver The Odyssey"></button>
+                <button class="punto_carrusel" aria-label="Ver Spider-Man"></button>
+            </div>
+        </section>
+
+        <section class="contenedor_cartelera">
+            <h2 class="titulo_contenedor_cartelera">En Cartelera</h2>
+
+            <div class="cuadricula_peliculas" id="contenedor_peliculas">
+
+                <a href="funciones.html?id=1" class="enlace_pelicula">
+                    <article class="tarjeta_pelicula">
+                        <figure class="contenedor_poster">
+                            <img src="banner_peliculas/scary_movie_6.jpg"  alt="Póster de Scary Movie 6">
+                        </figure>
+                        <h3 class="nombre_pelicula">Scary Movie 6</h3>
+                    </article>
+                </a>
+
+                <a href="funciones.html?id=2" class="enlace_pelicula">
+                    <article class="tarjeta_pelicula">
+                        <figure class="contenedor_poster">
+                            <img src="banner_peliculas/the_odyssey.jpg" alt="Póster de The Odyssey">
+                        </figure>
+                        <h3 class="nombre_pelicula">The Odyssey</h3>
+                    </article>
+                </a>
+
+                <a href="funciones.html?id=3" class="enlace_pelicula">
+                    <article class="tarjeta_pelicula">
+                        <figure class="contenedor_poster">
+                            <img src="banner_peliculas/spider_man.jpg" alt="Póster de Spider-Man">
+                        </figure>
+                        <h3 class="nombre_pelicula">Spider-Man</h3>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
