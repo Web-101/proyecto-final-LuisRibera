@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Asientos de Cine Nur</title>
+    <link rel="stylesheet" href="asientos.css">   
+</head>
+
+<body>
+    <header class="header_asientos">
+        <nav class="nav_volver">
+            <a href="funciones.html" class="btn_volver" aria-label="Volver a funciones">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_volver_svg">
+                    <path d="m15 18-6-6 6-6"/>
+                </svg>
+            </a>
+        </nav>
+        
+        <div class="info_header_central">
+            <h1 class="titulo_pelicula_pequeno">Scary Movie 6</h1>
+            <p class="subtitulo_sala_hora">Sala 1 - 14:30 hs</p>
+        </div>
+    </header>
+
+    <main class="contenido_asientos">
+        
+        <section class="seccion_mapa_sala" aria-label="Mapa de asientos de la sala">
+            
+            <div class="zona_pantalla">
+                <div class="linea_pantalla"></div>
+                <p class="texto_pantalla">PANTALLA</p>
+            </div>
+
+            <div class="contenedor_grilla_asientos">
+                
+                <div class="numeros_columnas" aria-hidden="true">
+                    <span></span> <span>1</span><span>2</span>
+                    <span>3</span><span>4</span><span>5</span><span>6</span>
+                    <span>7</span><span>8</span><span></span> 
+                </div>
+
+                <div class="fila_asientos" data-fila="A">
+                    <span class="letra_fila">A</span>
+                    
+                    <button class="asiento disponible" aria-label="Asiento A1" data-asiento="A1"></button>
+                    <button class="asiento disponible" aria-label="Asiento A2" data-asiento="A2"></button>
+                    
+                    <button class="asiento disponible" aria-label="Asiento A3" data-asiento="A3"></button>
+                    <button class="asiento disponible" aria-label="Asiento A4" data-asiento="A4"></button>
+                    <button class="asiento ocupado" aria-label="Asiento A5 ocupado" data-asiento="A5" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento A6" data-asiento="A6"></button>
+                    
+                    <button class="asiento disponible" aria-label="Asiento A7" data-asiento="A7"></button>
+                    <button class="asiento disponible" aria-label="Asiento A8" data-asiento="A8"></button>
+                    
+                    <span class="letra_fila">A</span>
+                </div>
+
+                <div class="fila_asientos" data-fila="B">
+                    <span class="letra_fila">B</span>
+                    <button class="asiento disponible" aria-label="Asiento B1" data-asiento="B1"></button>
+                    <button class="asiento disponible" aria-label="Asiento B2" data-asiento="B2"></button>
+                    <button class="asiento disponible" aria-label="Asiento B3" data-asiento="B3"></button>
+                    <button class="asiento ocupado" aria-label="Asiento B4 ocupado" data-asiento="B4" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento B5" data-asiento="B5"></button>
+                    <button class="asiento disponible" aria-label="Asiento B6" data-asiento="B6"></button>
+                    <button class="asiento disponible" aria-label="Asiento B7" data-asiento="B7"></button>
+                    <button class="asiento ocupado" aria-label="Asiento B8 ocupado" data-asiento="B8" disabled></button>
+                    <span class="letra_fila">B</span>
+                </div>
+
+            </div>
+
+            <div class="estado_asientos">
+                <div class="item_estado">
+                    <div class="cuadro_color color_disponible"></div>
+                    <span>Disponible</span>
+                </div>
+                <div class="item_estado">
+                    <div class="cuadro_color color_ocupado"></div>
+                    <span>Ocupado</span>
+                </div>
+                <div class="item_estado">
+                    <div class="cuadro_color color_seleccionado"></div>
+                    <span>Tu selección</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer_resumen_compra">
+        <div class="info_resumen">
+            <div class="detalles_entradas">
+                <p class="texto_cantidad_entradas">Entradas: <span id="contador_entradas">0</span></p>
+                <p class="texto_asientos_elegidos" id="asientos_seleccionados">Selecciona tus asientos</p>
+            </div>
+            
+            <div class="detalle_precio">
+                <p class="etiqueta_total">Total</p>
+                <p class="precio_total">Bs <span id="monto_total">0.00</span></p>
+            </div>
+        </div>
+
+        <a href="formulario.html" class="btn_continuar" id="btn_continuar_compra" aria-disabled="true">
+            Continuar
+        </a>
+    </footer>
+
+</body>
+</html>

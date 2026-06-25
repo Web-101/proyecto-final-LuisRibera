@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones de Cine Nur</title>
+    <link rel="stylesheet" href="funciones.css">
+</head>
+
+<body>
+    <header class="header_pelicula_detalle">
+
+        <nav class="nav_volver">
+            <a href="cartelera.html" class="btn_volver" aria-label="Volver a cartelera">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_volver_svg">
+                    <path d="m15 18-6-6 6-6"/>
+                </svg>
+            </a>
+        </nav>
+
+        <div class="contenedor_fondo_ampliado">
+            <img src="banner_peliculas/scary_movie_6.jpg" alt="Banner de la película ampliado" class="img_fondo_desenfocada">
+        </div>
+
+        <div class="info_superpuesta_pelicula">
+            <figure class="contenedor_poster_pequeño">
+                <img src="banner_peliculas/scary_movie_6.jpg" alt="Póster de la película" class="img_poster_pequeño">
+            </figure>
+            <h1 class="titulo_pelicula_detalle">Scary Movie 6</h1>
+        </div>
+
+    </header>
+
+    <main class="contenido_funciones">
+
+        <section class="seccion_sinopsis">
+            <h2 class="titulo_seccion_pequeño">Sinopsis</h2>
+            <p class="texto_sinopsis">
+                Dos amigos se ven envueltos otra vez en el caos con asesinos, monstruos y criaturas sobrenaturales.
+            </p>
+        </section>
+
+        <section class="seccion_horarios">
+
+            <div class="encabezado_horarios">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_calendario">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <h3 class="fecha_horarios">Jueves, 25 De Junio</h3>
+            </div>
+
+            <p class="texto_seleccion_funcion">Selecciona una función</p>
+
+            <div class="lista_funciones">
+                
+                <a href="asientos.html?id_funcion=101" class="enlace_funcion">
+                    <article class="tarjeta_funcion">
+                        <div class="detalle_tiempo_sala">
+                            <span class="hora_funcion">14:30</span>
+                            <span class="sala_funcion">Sala 1</span>
+                        </div>
+                        <span class="precio_funcion">Bs 55</span>
+                    </article>
+                </a>
+
+                <a href="asientos.html?id_funcion=102" class="enlace_funcion">
+                    <article class="tarjeta_funcion">
+                        <div class="detalle_tiempo_sala">
+                            <span class="hora_funcion">17:15</span>
+                            <span class="sala_funcion">Sala 1</span>
+                        </div>
+                        <span class="precio_funcion">Bs 8.50</span>
+                    </article>
+                </a>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+</html>
