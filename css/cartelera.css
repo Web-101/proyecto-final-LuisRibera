@@ -1,58 +1,138 @@
-body{
-    background:black;
-    display: flex;
-    height: 755px;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
-    align-self: stretch;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body{
+    margin: 0 auto;
+    color: #ffffff;
+    max-width: 375px;
+    background: #0a0a0a;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 /*navegacion*/
 .header_principal{
-    display: flex;
-    width: 420px;
-    height: 60px;
-    padding: 2px 16px 8px 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
+    padding: 20px 16px 8px;
 }
 .titulo_cine{
-    color: #FFF;
-    font-family: Inter;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
+    color: #ffffff;
     line-height: 32px;
+    font-weight: 600;
     letter-spacing: -0.53px;
 }
 .texto_verde{
-    color: #A3E635;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-    letter-spacing: -0.53px;
+    color: #a3e635;
 }
+
 /*Contenido*/
 .contenido_principal{
-    display: flex;
-    width: 388px;
-    height: 226px;
+    padding: 0 16px 16px;
+}
+
+/*carrusel*/
+.carrusel{
     padding-top: 12px;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
 }
-.carrusel {
-    height: 194px;
-    align-self: stretch;   
+.tarjeta_peli_destacada{
+    height: 172px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
-.carrusel img{
-    width: 388px;
-    height: 194px;
+.img_destacada{
+    width: 100%;
+    height: 172px;
+    display: block;
+    object-fit: cover;
 }
+.titulo_destacado{
+    padding: 16px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.44px;
+    background: linear-gradient(
+        to top,
+        rgba(0,  0, 0 , 0.86),
+        rgba(0,  0,  0 , 0.28) 53%,
+        rgba(0,  0,  0, 0)
+    );
+}
+
+.animacion_carrusel{
+    padding-top: 12px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.punto_carrusel,
+.punto_carrusel_activo{
+    padding: 0;
+    height: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9999px;
+}
+.punto_carrusel{
+    width: 8px;
+    background: rgba(255, 255, 255, 0.25);
+}
+.punto_carrusel_activo{
+    width: 20px;
+    background: #a3e635;
+}
+
+.titulo_contenedor_cartelera{
+    padding-top: 28px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: -0.45px;
+}
+
+.cuadricula_peliculas{
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.enlace_pelicula{
+    color: inherit;
+    text-decoration: none;
+}
+
+.tarjeta_pelicula{
+    overflow: hidden;
+    background: #1e1e1e;
+    border-radius: 14px;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.1),
+        0 1px 2px -1px rgba(0, 0, 0, 0.1);
+ }
+
+.contenedor_poster img{
+    width: 100%;
+    height: 248px;
+    display: block;
+    object-fit: cover;
+}
+.nombre_pelicula{
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.15px;
+}
+
+
 
 
