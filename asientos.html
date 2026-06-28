@@ -10,7 +10,7 @@
 <body>
     <header class="header_asientos">
         <nav class="nav_volver">
-            <a href="funciones.html" class="btn_volver" aria-label="Volver a funciones">
+            <a href="html/funciones.html" class="btn_volver" aria-label="Volver a funciones">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_volver_svg">
                     <path d="m15 18-6-6 6-6"/>
                 </svg>
@@ -18,7 +18,7 @@
         </nav>
         
         <div class="info_header_central">
-            <h1 class="titulo_pelicula_pequeno">Scary Movie 6</h1>
+            <h1 class="titulo_pelicula_pequeño">Scary Movie 6</h1>
             <p class="subtitulo_sala_hora">Sala 1 - 14:30 hs</p>
         </div>
     </header>
@@ -42,32 +42,106 @@
 
                 <div class="fila_asientos" data-fila="A">
                     <span class="letra_fila">A</span>
-                    
-                    <button class="asiento disponible" aria-label="Asiento A1" data-asiento="A1"></button>
-                    <button class="asiento disponible" aria-label="Asiento A2" data-asiento="A2"></button>
-                    
-                    <button class="asiento disponible" aria-label="Asiento A3" data-asiento="A3"></button>
-                    <button class="asiento disponible" aria-label="Asiento A4" data-asiento="A4"></button>
-                    <button class="asiento ocupado" aria-label="Asiento A5 ocupado" data-asiento="A5" disabled></button>
-                    <button class="asiento disponible" aria-label="Asiento A6" data-asiento="A6"></button>
-                    
-                    <button class="asiento disponible" aria-label="Asiento A7" data-asiento="A7"></button>
-                    <button class="asiento disponible" aria-label="Asiento A8" data-asiento="A8"></button>
-                    
+                    <button class="asiento disponible" aria-label="Asiento A1" data_asiento="A1"></button>
+                    <button class="asiento disponible" aria-label="Asiento A2" data_asiento="A2"></button>
+                    <button class="asiento disponible" aria-label="Asiento A3" data_asiento="A3"></button>
+                    <button class="asiento disponible" aria-label="Asiento A4" data_asiento="A4"></button>
+                    <button class="asiento ocupado" aria-label="Asiento A5 ocupado" data_asiento="A5" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento A6" data_asiento="A6"></button>
+                    <button class="asiento disponible" aria-label="Asiento A7" data_asiento="A7"></button>
+                    <button class="asiento disponible" aria-label="Asiento A8" data_asiento="A8"></button>
                     <span class="letra_fila">A</span>
                 </div>
 
                 <div class="fila_asientos" data-fila="B">
                     <span class="letra_fila">B</span>
-                    <button class="asiento disponible" aria-label="Asiento B1" data-asiento="B1"></button>
-                    <button class="asiento disponible" aria-label="Asiento B2" data-asiento="B2"></button>
-                    <button class="asiento disponible" aria-label="Asiento B3" data-asiento="B3"></button>
-                    <button class="asiento ocupado" aria-label="Asiento B4 ocupado" data-asiento="B4" disabled></button>
-                    <button class="asiento disponible" aria-label="Asiento B5" data-asiento="B5"></button>
-                    <button class="asiento disponible" aria-label="Asiento B6" data-asiento="B6"></button>
-                    <button class="asiento disponible" aria-label="Asiento B7" data-asiento="B7"></button>
-                    <button class="asiento ocupado" aria-label="Asiento B8 ocupado" data-asiento="B8" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento B1" data_asiento="B1"></button>
+                    <button class="asiento disponible" aria-label="Asiento B2" data_asiento="B2"></button>
+                    <button class="asiento disponible" aria-label="Asiento B3" data_asiento="B3"></button>
+                    <button class="asiento ocupado" aria-label="Asiento B4 ocupado" data_asiento="B4" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento B5" data_asiento="B5"></button>
+                    <button class="asiento disponible" aria-label="Asiento B6" data_asiento="B6"></button>
+                    <button class="asiento disponible" aria-label="Asiento B7" data_asiento="B7"></button>
+                    <button class="asiento ocupado" aria-label="Asiento B8 ocupado" data_asiento="B8" disabled></button>
                     <span class="letra_fila">B</span>
+                </div>
+
+                <div class="fila_asientos" data-fila="C">
+                    <span class="letra_fila">C</span>
+                    <button class="asiento disponible" aria-label="Asiento C1" data_asiento="C1"></button>
+                    <button class="asiento ocupado" aria-label="Asiento C2 ocupado" data_asiento="C2" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento C3" data_asiento="C3"></button>
+                    <button class="asiento disponible" aria-label="Asiento C4" data_asiento="C4"></button>
+                    <button class="asiento disponible" aria-label="Asiento C5" data_asiento="C5"></button>
+                    <button class="asiento disponible" aria-label="Asiento C6" data_asiento="C6"></button>
+                    <button class="asiento disponible" aria-label="Asiento C7" data_asiento="C7"></button>
+                    <button class="asiento disponible" aria-label="Asiento C8" data_asiento="C8"></button>
+                    <span class="letra_fila">C</span>
+                </div>
+
+                <div class="fila_asientos" data-fila="D">
+                    <span class="letra_fila">D</span>
+                    <button class="asiento disponible" aria-label="Asiento D1" data_asiento="D1"></button>
+                    <button class="asiento disponible" aria-label="Asiento D2" data_asiento="D2"></button>
+                    <button class="asiento disponible" aria-label="Asiento D3" data_asiento="D3"></button>
+                    <button class="asiento disponible" aria-label="Asiento D4" data_asiento="D4"></button>
+                    <button class="asiento disponible" aria-label="Asiento D5" data_asiento="D5"></button>
+                    <button class="asiento disponible" aria-label="Asiento D6" data_asiento="D6"></button>
+                    <button class="asiento ocupado" aria-label="Asiento D7 ocupado" data_asiento="D7" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento D8" data_asiento="D8"></button>
+                    <span class="letra_fila">D</span>
+                </div>
+
+                <div class="fila_asientos" data-fila="E">
+                    <span class="letra_fila">E</span>
+                    <button class="asiento disponible" aria-label="Asiento E1" data_asiento="E1"></button>
+                    <button class="asiento disponible" aria-label="Asiento E2" data_asiento="E2"></button>
+                    <button class="asiento disponible" aria-label="Asiento E3" data_asiento="E3"></button>
+                    <button class="asiento disponible" aria-label="Asiento E4" data_asiento="E4"></button>
+                    <button class="asiento disponible" aria-label="Asiento E5" data_asiento="E5"></button>
+                    <button class="asiento ocupado" aria-label="Asiento E6 ocupado" data_asiento="E6" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento E7" data_asiento="E7"></button>
+                    <button class="asiento disponible" aria-label="Asiento E8" data_asiento="E8"></button>
+                    <span class="letra_fila">E</span>
+                </div>
+
+                <div class="fila_asientos" data-fila="F">
+                    <span class="letra_fila">F</span>
+                    <button class="asiento disponible" aria-label="Asiento F1" data_asiento="F1"></button>
+                    <button class="asiento disponible" aria-label="Asiento F2" data_asiento="F2"></button>
+                    <button class="asiento disponible" aria-label="Asiento F3" data_asiento="F3"></button>
+                    <button class="asiento ocupado" aria-label="Asiento F4 ocupado" data_asiento="F4" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento F5" data_asiento="F5"></button>
+                    <button class="asiento ocupado" aria-label="Asiento F6 ocupado" data_asiento="F6" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento F7" data_asiento="F7"></button>
+                    <button class="asiento disponible" aria-label="Asiento F8" data_asiento="F8"></button>
+                    <span class="letra_fila">F</span>
+                </div>
+
+                <div class="fila_asientos" data-fila="G">
+                    <span class="letra_fila">G</span>
+                    <button class="asiento disponible" aria-label="Asiento G1" data_asiento="G1"></button>
+                    <button class="asiento disponible" aria-label="Asiento G2" data_asiento="G2"></button>
+                    <button class="asiento ocupado" aria-label="Asiento G3 ocupado" data_asiento="G3" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento G4" data_asiento="G4"></button>
+                    <button class="asiento disponible" aria-label="Asiento G5" data_asiento="G5"></button>
+                    <button class="asiento disponible" aria-label="Asiento G6" data_asiento="G6"></button>
+                    <button class="asiento disponible" aria-label="Asiento G7" data_asiento="G7"></button>
+                    <button class="asiento disponible" aria-label="Asiento G8" data_asiento="G8"></button>
+                    <span class="letra_fila">G</span>
+                </div>
+
+                <div class="fila_asientos" data-fila="H">
+                    <span class="letra_fila">H</span>
+                    <button class="asiento disponible" aria-label="Asiento H1" data_asiento="H1"></button>
+                    <button class="asiento disponible" aria-label="Asiento H2" data_asiento="H2"></button>
+                    <button class="asiento disponible" aria-label="Asiento H3" data_asiento="H3"></button>
+                    <button class="asiento disponible" aria-label="Asiento H4" data_asiento="H4"></button>
+                    <button class="asiento disponible" aria-label="Asiento H5" data_asiento="H5"></button>
+                    <button class="asiento ocupado" aria-label="Asiento H6 ocupado" data_asiento="H6" disabled></button>
+                    <button class="asiento ocupado" aria-label="Asiento H7 ocupado" data_asiento="H7" disabled></button>
+                    <button class="asiento disponible" aria-label="Asiento H8" data_asiento="H8"></button>
+                    <span class="letra_fila">H</span>
                 </div>
 
             </div>
@@ -94,13 +168,13 @@
     <footer class="footer_resumen_compra">
         <div class="info_resumen">
             <div class="detalles_entradas">
-                <p class="texto_cantidad_entradas">Entradas: <span id="contador_entradas">0</span></p>
+                <p class="texto_cantidad_entradas">Entradas: <span id="contador_entradas">3</span></p>
                 <p class="texto_asientos_elegidos" id="asientos_seleccionados">Selecciona tus asientos</p>
             </div>
             
             <div class="detalle_precio">
                 <p class="etiqueta_total">Total</p>
-                <p class="precio_total">Bs <span id="monto_total">0.00</span></p>
+                <p class="precio_total">Bs <span id="monto_total">165.00</span></p>
             </div>
         </div>
 

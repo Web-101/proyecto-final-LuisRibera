@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de compra de Cine Nur</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    </head>
+
+<body>
+
+    <header class="header_formulario">
+        <nav class="nav_volver">
+            <a href="asientos.html" class="btn_volver" aria-label="Volver a seleccionar asientos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_volver_svg">
+                    <path d="m15 18-6-6 6-6"/>
+                </svg>
+            </a>
+        </nav>
+        <h1 class="titulo_header">Finalizar compra</h1>
+    </header>
+
+    <main class="contenido_formulario">
+        
+        <section class="seccion_resumen">
+            <h2 class="titulo_seccion_pequeño">Resumen del pedido</h2>
+            
+            <div class="tarjeta_resumen">
+                <ul class="lista_detalles">
+                    
+                    <li class="item_detalle">
+                        <div class="etiqueta_detalle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_detalle"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M17 3v18"/><path d="M3 7.5h4"/><path d="M3 12h4"/><path d="M3 16.5h4"/><path d="M17 7.5h4"/><path d="M17 12h4"/><path d="M17 16.5h4"/></svg>
+                            <span>Película:</span>
+                        </div>
+                        <span class="valor_detalle" id="resumen_pelicula">Scary Movie 6</span>
+                    </li>
+                    
+                    <li class="item_detalle">
+                        <div class="etiqueta_detalle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_detalle"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span>Función:</span>
+                        </div>
+                        <span class="valor_detalle" id="resumen_funcion">Sala 1 · 14:30</span>
+                    </li>
+                    
+                    <li class="item_detalle">
+                        <div class="etiqueta_detalle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_detalle"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
+                            <span>Asientos:</span>
+                        </div>
+                        <span class="valor_detalle" id="resumen_asientos">D4, D5, D6</span>
+                    </li>
+
+                </ul>
+
+                <div class="contenedor_total_resumen">
+                    <div class="total_resumen">
+                        <span class="texto_total_entradas" id="texto_cantidad_resumen">Total (3 entradas)</span>
+                        <span class="valor_total_precio" id="precio_final_resumen">Bs 165.00</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="seccion_formulario">
+            <h2 class="titulo_seccion_pequeño">Tus datos</h2>
+            
+            <form action="confirmacion.html" class="formulario_compra" id="form_datos_usuario">
+                
+                <div class="form_input">
+                    <label for="nombre_completo" class="etiqueta_input">Nombre completo</label>
+                    <input type="text" id="nombre_completo" name="nombre_completo" class="campo_input" placeholder="Ej. Ana Martínez" required>
+                </div>
+
+                <div class="form_input">
+                    <label for="correo_electronico" class="etiqueta_input">Correo electrónico</label>
+                    <input type="email" id="correo_electronico" name="correo_electronico" class="campo_input" placeholder="tucorreo@email.com" required>
+                </div>
+
+                <div class="form_input">
+                    <label for="telefono" class="etiqueta_input">Teléfono (opcional)</label>
+                    <input type="tel" id="telefono" name="telefono" class="campo_input" placeholder="+591 71234567">
+                </div>
+
+                <button type="submit" class="btn_continuar" id="btn_procesar_compra">
+                    Comprar - Bs 165.00
+                </button>
+                
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

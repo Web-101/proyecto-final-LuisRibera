@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Compra de Cine Nur</title>
+    </head>
+<body>
+
+    <header class="header_confirmacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_exito">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        
+        <h1 class="titulo_agradecimiento">¡Gracias por tu compra, <span id="nombre_cliente_confirmacion">McLovinPrueba</span>!</h1>
+        <p class="texto_envio_correo">Hemos enviado tus entradas a <span id="correo_cliente_confirmacion">luudenej@gmail.com</span></p>
+    </header>
+
+    <main class="contenido_ticket">
+        
+        <article class="tarjeta_ticket">
+            
+            <figure class="contenedor_banner_ticket">
+                <img src="banner_peliculas/scary_movie_6.jpg" alt="Banner de Scary Movie 6" class="img_banner_ticket">
+                <div class="sombra_degradada_banner"></div>
+                <figcaption class="titulo_pelicula_ticket">Scary Movie 6</figcaption>
+            </figure>
+
+            <ul class="lista_detalles_ticket">
+                
+                <li class="item_detalle">
+                    <div class="etiqueta_detalle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_detalle"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        <span>Fecha</span>
+                    </div>
+                    <span class="valor_detalle">Hoy</span>
+                </li>
+
+                <li class="item_detalle">
+                    <div class="etiqueta_detalle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_detalle"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>Hora</span>
+                    </div>
+                    <span class="valor_detalle">14:30 hs</span>
+                </li>
+
+                <li class="item_detalle">
+                    <div class="etiqueta_detalle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_detalle"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Sala</span>
+                    </div>
+                    <span class="valor_detalle">Sala 1</span>
+                </li>
+
+                <li class="item_detalle">
+                    <div class="etiqueta_detalle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono_detalle"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
+                        <span>Asientos</span>
+                    </div>
+                    <span class="valor_detalle">D4, D5, D6</span>
+                </li>
+
+            </ul>
+
+            <div class="divisor_ticket">
+                <div class="recorte_izquierdo"></div>
+                <div class="linea_punteada"></div>
+                <div class="recorte_derecho"></div>
+            </div>
+
+            <div class="resumen_pago_ticket">
+                <div class="bloque_resumen">
+                    <span class="etiqueta_resumen">Código de reserva</span>
+                    <span class="valor_resumen">CINE-FVBMFF</span>
+                </div>
+                <div class="bloque_resumen alineacion_derecha">
+                    <span class="etiqueta_resumen">Total pagado</span>
+                    <span class="valor_resumen">Bs 165.00</span>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="footer_accion_final">
+        <hr class="linea_divisoria_footer">
+        
+        <a href="cartelera.html" class="btn_continuar" aria-label="Volver a la cartelera principal">
+            Volver a la cartelera
+        </a>
+    </footer>
+
+</body>
+</html>
