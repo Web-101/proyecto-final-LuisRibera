@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    color: #ffffff;
+    max-width: 375px;
+    background: #0a0a0a;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/*cabecera*/
+.header_pelicula_detalle{
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+.contenedor_fondo_ampliado{
+    inset: 0;
+    position: absolute;
+}
+.contenedor_fondo_ampliado::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(
+        to top,
+        #0a0a0a,
+        rgba(10, 10, 10, 0.85) 50%,
+        rgba(10, 10, 10, 0.4)
+    );
+}
+.img_fondo_desenfocada{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/*boton volver*/
+.nav_volver{
+    padding: 16px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+}
+.btn_volver{
+    width: 36px;
+    height: 36px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+.icono_volver_svg{
+    width: 20px;
+    height: 20px;
+}
+
+/*poster y titulo*/
+.info_superpuesta_pelicula{
+    padding: 16px;
+    gap: 16px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+}
+.contenedor_poster_pequeño{
+    width: 112px;
+    height: 168px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.img_poster_pequeño{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.titulo_pelicula_detalle{
+    padding-bottom: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.45px;
+}
+
+/*contenido*/
+.contenido_funciones{
+    padding: 0 16px 16px;
+}
+.titulo_seccion_pequeño{
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: -0.44px;
+}
+.texto_sinopsis{
+    padding-top: 8px;
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.15px;
+}
+
+/*horarios*/
+.encabezado_horarios{
+    padding-top: 24px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+.icono_calendario{
+    width: 20px;
+    height: 20px;
+    color: #a3e635;
+    flex-shrink: 0;
+}
+.fecha_horarios{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: -0.44px;
+    text-transform: capitalize;
+}
+.texto_seleccion_funcion{
+    padding-top: 4px;
+    color: #737373;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.15px;
+}
+.lista_funciones{
+    padding-top: 12px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.enlace_funcion{
+    color: inherit;
+    text-decoration: none;
+}
+.tarjeta_funcion{
+    padding: 16px;
+    display: flex;
+    background: #161618;
+    align-items: center;
+    border-radius: 14px;
+    justify-content: space-between;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+.detalle_tiempo_sala{
+    display: flex;
+    flex-direction: column;
+}
+.hora_funcion{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.44px;
+}
+.sala_funcion{
+    color: #a1a1a1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.15px;
+}
+.precio_funcion{
+    color: #a1a1a1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.15px;
+}
