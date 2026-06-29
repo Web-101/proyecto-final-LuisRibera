@@ -3,27 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     margin: 0 auto;
     color: #ffffff;
     max-width: 375px;
     background: #0a0a0a;
-    min-height: 100vh;
-    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    min-height: auto;
+    font-family: Inter, sans-serif;
 }
+
 /*navegacion*/
+
 .header_principal{
     padding: 20px 16px 8px;
 }
-.titulo_cine{
-    font-size: 24px;
+.texto_blanco_cine{
     color: #ffffff;
-    line-height: 32px;
-    font-weight: 600;
-    letter-spacing: -0.53px;
 }
-.texto_verde{
+.texto_verde_nur{
     color: #a3e635;
 }
 
@@ -36,41 +33,31 @@ body{
 .carrusel{
     padding-top: 12px;
 }
+
 .tarjeta_peli_destacada{
     height: 172px;
     overflow: hidden;
-    position: relative;
     border-radius: 16px;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+
 }
 .img_destacada{
     width: 100%;
     height: 172px;
-    display: block;
     object-fit: cover;
 }
 .titulo_destacado{
     padding: 16px;
-    left: 0;
-    right: 0;
+    display: flex;
     bottom: 0;
     position: absolute;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.44px;
-    background: linear-gradient(
-        to top,
-        rgba(0,  0, 0 , 0.86),
-        rgba(0,  0,  0 , 0.28) 53%,
-        rgba(0,  0,  0, 0)
-    );
+    letter-spacing: -0.439px;
 }
 
 .animacion_carrusel{
     padding-top: 12px;
     gap: 8px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .punto_carrusel,
@@ -92,7 +79,6 @@ body{
 
 .titulo_contenedor_cartelera{
     padding-top: 28px;
-    padding-bottom: 12px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -100,15 +86,15 @@ body{
 }
 
 .cuadricula_peliculas{
+    padding-top: 12px;
     gap: 12px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .enlace_pelicula{
-    color: inherit;
+    color: #ffffff;
     text-decoration: none;
 }
-
 .tarjeta_pelicula{
     overflow: hidden;
     background: #1e1e1e;

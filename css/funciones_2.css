@@ -3,13 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     margin: 0 auto;
     color: #ffffff;
     max-width: 375px;
     background: #0a0a0a;
-    min-height: 100vh;
-    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    min-height: auto;
+    font-family: Inter, sans-serif;
 }
 
 /*cabecera*/
@@ -19,7 +20,6 @@ body{
     position: relative;
 }
 .contenedor_fondo_ampliado{
-    inset: 0;
     position: absolute;
 }
 .contenedor_fondo_ampliado::after{
@@ -30,7 +30,7 @@ body{
         to top,
         #0a0a0a,
         rgba(10, 10, 10, 0.85) 50%,
-        rgba(10, 10, 10, 0.4)
+        rgba(55, 17, 17, 0.4)
     );
 }
 .img_fondo_desenfocada{
@@ -43,8 +43,6 @@ body{
 /*boton volver*/
 .nav_volver{
     padding: 16px;
-    top: 0;
-    left: 0;
     z-index: 2;
     position: absolute;
 }
@@ -64,13 +62,12 @@ body{
 }
 
 /*poster y titulo*/
+
+
 .info_superpuesta_pelicula{
     padding: 16px;
     gap: 16px;
-    left: 0;
-    right: 0;
     bottom: 0;
-    z-index: 1;
     display: flex;
     position: absolute;
     align-items: flex-end;
@@ -169,6 +166,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .hora_funcion{
     color: #ffffff;
     font-size: 18px;

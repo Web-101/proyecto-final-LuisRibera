@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    color: #ffffff;
+    max-width: 375px;
+
+    background: #0a0a0a;
+    min-height: auto;
+    font-family: Inter, sans-serif;
+}
+
+
+/*cabecera*/
+.header_formulario{
+    padding: 16px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.btn_volver{
+    width: 36px;
+    height: 36px;
+    color: #ffffff;
+    display: flex;
+
+    align-items: center;
+    border-radius: 9999px;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+.icono_volver_svg{
+    width: 24px;
+    height: 24px;
+}
+
+.titulo_header{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.45px;
+}
+
+
+
+/*contenido*/
+.contenido_formulario{
+    padding: 0 16px 16px;
+}
+.titulo_seccion_pequeño{
+    padding-top: 8px;
+    padding-bottom: 12px;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.44px;
+}
+
+
+/*resumen*/
+.tarjeta_resumen{
+    padding: 16px;
+    background: #161618;
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+.lista_detalles{
+    gap: 12px;
+    display: flex;
+
+    list-style: none;
+    flex-direction: column;
+}
+.item_detalle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.etiqueta_detalle{
+    gap: 8px;
+    display: flex;
+    color: #a1a1a1;
+    font-size: 14px;
+    align-items: center;
+}
+.icono_detalle{
+    flex-shrink: 0;
+}
+.valor_detalle{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.contenedor_total_resumen{
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.total_resumen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto_total_entradas{
+    color: #a1a1a1;
+    font-size: 14px;
+}
+.valor_total_precio{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/*formulario*/
+.seccion_formulario{
+    padding-top: 24px;
+}
+.formulario_compra{
+    gap: 16px;
+    display: flex;
+
+    padding-top: 4px;
+    flex-direction: column;
+}
+.form_input{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.etiqueta_input{
+    color: #d4d4d4;
+    font-size: 14px;
+    font-weight: 500;
+}
+.campo_input{
+    padding: 14px;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+
+    border-radius: 12px;
+    background: #1e1e1e;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.campo_input::placeholder{
+    color: #737373;
+}
+
+.campo_input:focus{
+    outline: none;
+    box-shadow: 0 0 0 1px #a3e635;
+}
+
+.btn_continuar{
+    padding: 14px;
+    color: #0a0a0a;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+    background: #a3e635;
+    text-decoration: none;
+}

@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    color: #ffffff;
+    max-width: 375px;
+    background: #0a0a0a;
+    min-height: auto;
+    font-family: Inter, sans-serif;
+}
+
+/*cabecera*/
+
+.header_asientos{
+    padding: 16px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.nav_volver{
+    top: 16px;
+    left: 16px;
+    position: absolute;
+}
+.btn_volver{
+    width: 36px;
+    height: 36px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.icono_volver_svg{
+    width: 20px;
+    height: 20px;
+}
+.info_header_central{
+    text-align: center;
+}
+.titulo_pelicula_pequeño{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.subtitulo_sala_hora{
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+/*contenido*/
+.contenido_asientos{
+    padding: 0 16px;
+}
+
+/*pantalla*/
+.zona_pantalla{
+    padding-top: 8px;
+}
+.linea_pantalla{
+    height: 6px;
+    border-radius: 9999px;
+    background: linear-gradient(to bottom, #d4d4d4, #525252);
+    box-shadow: 0 6px 28px rgba(212, 212, 212, 0.35);
+}
+.texto_pantalla{
+    padding-top: 14px;
+    color: #737373;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+/*grilla*/
+.contenedor_grilla_asientos{
+    padding-top: 28px;
+}
+.numeros_columnas{
+    gap: 6px;
+    display: grid;
+    grid-template-columns: 18px repeat(8, 1fr) 18px;
+}
+.numeros_columnas span{
+    color: #737373;
+    font-size: 11px;
+    text-align: center;
+}
+.fila_asientos{
+    padding-top: 6px;
+    gap: 6px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 18px repeat(8, 1fr) 18px;
+}
+
+.letra_fila{
+    color: #737373;
+    font-size: 11px;
+    text-align: center;
+}
+
+.asiento{
+    border: none;
+    cursor: pointer;
+    aspect-ratio: 1;
+    border-radius: 6px;
+}
+.disponible{
+    background: #e5e5e5;
+}
+
+.ocupado{
+    cursor: not-allowed;
+    background: #3a3a3d;
+}
+.seleccionado{
+    background: #a3e635;
+}
+
+/*leyenda*/
+.estado_asientos{
+    padding-top: 24px;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+}
+.item_estado{
+    gap: 6px;
+    display: flex;
+    color: #a1a1a1;
+    font-size: 12px;
+    align-items: center;
+}
+.cuadro_color{
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+}
+.color_disponible{
+    background: #e5e5e5;
+}
+.color_ocupado{
+    background: #3a3a3d;
+}
+.color_seleccionado{
+    background: #a3e635;
+}
+
+/*footer*/
+.footer_resumen_compra{
+    padding: 16px;
+    margin-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.info_resumen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto_cantidad_entradas{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.texto_asientos_elegidos{
+    padding-top: 2px;
+    color: #a3e635;
+    
+    font-size: 13px;
+}
+.detalle_precio{
+    text-align: right;
+}
+
+.etiqueta_total{
+    color: #a1a1a1;
+    font-size: 12px;
+}
+
+.precio_total{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+}
+.btn_continuar{
+    padding: 14px;
+    color: #737373;
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 12px;
+    background: #262626;
+    text-decoration: none;
+}
