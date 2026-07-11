@@ -1,42 +1,31 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    margin: 0 auto;
-    color: #ffffff;
-    max-width: 375px;
-    background: #0a0a0a;
-    min-height: auto;
-    font-family: Inter, sans-serif;
-}
-
 /*navegacion*/
-
 .header_principal{
     padding: 20px 16px 8px;
 }
 .texto_blanco_cine{
     color: #ffffff;
 }
+
 .texto_verde_nur{
     color: #a3e635;
 }
+
 
 /*Contenido*/
 .contenido_principal{
     padding: 0 16px 16px;
 }
 
+
+
 /*carrusel*/
 .carrusel{
     padding-top: 12px;
 }
-
 .tarjeta_peli_destacada{
     height: 172px;
     overflow: hidden;
+
     border-radius: 16px;
     position: relative;
 
@@ -46,9 +35,11 @@ body{
     height: 172px;
     object-fit: cover;
 }
+
 .titulo_destacado{
     padding: 16px;
     display: flex;
+
     bottom: 0;
     position: absolute;
     letter-spacing: -0.439px;
@@ -65,6 +56,7 @@ body{
     padding: 0;
     height: 8px;
     border: none;
+
     cursor: pointer;
     border-radius: 9999px;
 }
@@ -72,10 +64,13 @@ body{
     width: 8px;
     background: rgba(255, 255, 255, 0.25);
 }
+
 .punto_carrusel_activo{
     width: 20px;
     background: #a3e635;
 }
+
+
 
 .titulo_contenedor_cartelera{
     padding-top: 28px;
@@ -84,13 +79,14 @@ body{
     font-weight: 500;
     letter-spacing: -0.45px;
 }
-
 .cuadricula_peliculas{
     padding-top: 12px;
     gap: 12px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
 .enlace_pelicula{
     color: #ffffff;
     text-decoration: none;
@@ -108,6 +104,7 @@ body{
 .contenedor_poster img{
     width: 100%;
     height: 248px;
+
     display: block;
     object-fit: cover;
 }
@@ -118,7 +115,3 @@ body{
     font-weight: 500;
     letter-spacing: -0.15px;
 }
-
-
-
-

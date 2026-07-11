@@ -1,20 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0 auto;
-    color: #ffffff;
-    max-width: 375px;
-
-    background: #0a0a0a;
-    min-height: auto;
-    font-family: Inter, sans-serif;
-}
-
-
 /*cabecera*/
 .header_confirmacion{
     padding: 32px 24px 8px;
@@ -90,27 +73,6 @@ body{
     display: flex;
     list-style: none;
     flex-direction: column;
-}
-.item_detalle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.etiqueta_detalle{
-    gap: 8px;
-    display: flex;
-    color: #a1a1a1;
-    font-size: 14px;
-    align-items: center;
-}
-.icono_detalle{
-    flex-shrink: 0;
-}
-.valor_detalle{
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 
