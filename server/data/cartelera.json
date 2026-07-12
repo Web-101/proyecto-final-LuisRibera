@@ -1,0 +1,72 @@
+{
+  "peliculas": [
+    {
+      "id": 1,
+      "titulo": "Scary Movie 6",
+      "poster": "banner_peliculas/scary_movie_6.jpg",
+      "sinopsis": "Dos amigos se ven envueltos otra vez en el caos con asesinos, monstruos y criaturas sobrenaturales en la parodia más gamberra del terror moderno."
+    },
+    {
+      "id": 2,
+      "titulo": "The Odyssey",
+      "poster": "banner_peliculas/the_odyssey.jpg",
+      "sinopsis": "La Odisea sigue a Odiseo, el legendario rey griego de Ítaca, en su largo y peligroso viaje de regreso a casa tras la guerra de Troya, narrando sus encuentros con seres míticos como el cíclope Polifemo, las sirenas y la diosa bruja Circe, mientras intenta reencontrarse con su esposa, Penélope."
+    },
+    {
+      "id": 3,
+      "titulo": "Spider-Man",
+      "poster": "banner_peliculas/spider-man.jpg",
+      "sinopsis": "Han pasado cuatro años desde la última vez que vimos a nuestro amigable héroe. Peter Parker ya no está, pero Spider-Man está en la cima de su capacidad para mantener la ciudad de Nueva York a salvo. Todo le va bien a nuestro héroe anónimo hasta que una inusual serie de crímenes lo arrastra a una red de misterio más grande."
+    },
+    {
+      "id": 4,
+      "titulo": "El Día de la Revelación",
+      "poster": "banner_peliculas/el_dia_de_la_revelacion.jpg",
+      "sinopsis": "Si descubrieras que no estamos solos, si alguien te abriera los ojos y te lo demostrase, ¿te asustarías? Este verano, la verdad será revelada a siete mil millones de personas. Llega... el día de la revelación."
+    },
+    {
+      "id": 5,
+      "titulo": "Toy Story 5",
+      "poster": "banner_peliculas/toy_story_5.jpg",
+      "sinopsis": "El trabajo de Buzz, Woody, Jessie y el resto de la pandilla se complica exponencialmente cuando se enfrentan a esta nueva amenaza para el tiempo de juego."
+    },
+    {
+      "id": 6,
+      "titulo": "Supergirl",
+      "poster": "banner_peliculas/supergirl.jpg",
+      "sinopsis": "Kara Zor-El abraza su identidad como heroína y defiende la Tierra de amenazas que ponen a prueba su fuerza y su corazón."
+    },
+    {
+      "id": 7,
+      "titulo": "Evil Dead Burn",
+      "poster": "banner_peliculas/evil_dead_burn.jpg",
+      "sinopsis": "Tras la muerte de su marido, una mujer busca consuelo junto a la familia de este en su aislada casa familiar. Pero, cuando uno a uno comienzan a convertirse en seres poseídos, el encuentro acaba convirtiéndose en una reunión familiar salida del infierno."
+    },
+    {
+      "id": 8,
+      "titulo": "Jackass",
+      "poster": "banner_peliculas/jackass.jpg",
+      "sinopsis": "El equipo original se reúne para protagonizar una última aventura cargada de humor extremo, desafíos insólitos y situaciones tan inesperadas como hilarantes."
+    }
+  ],
+  "funciones": [
+    { "id": 101, "peliculaId": 1, "hora": "14:30", "sala": "Sala 1", "precio": 45.00, "asientosOcupados": ["A5", "B4", "B8", "C2", "D7"] },
+    { "id": 102, "peliculaId": 1, "hora": "20:00", "sala": "Sala 1", "precio": 55.00, "asientosOcupados": ["E6", "F4", "F6", "H6", "H7"] },
+
+    { "id": 201, "peliculaId": 2, "hora": "15:00", "sala": "Sala 2", "precio": 50.00, "asientosOcupados": ["C4", "C5", "D4", "D5"] },
+    { "id": 202, "peliculaId": 2, "hora": "20:30", "sala": "Sala 2", "precio": 60.00, "asientosOcupados": ["A1", "A2", "G3", "G4"] },
+
+    { "id": 301, "peliculaId": 3, "hora": "14:00", "sala": "Sala 3", "precio": 45.00, "asientosOcupados": ["A8", "B7", "C6"] },
+    { "id": 302, "peliculaId": 3, "hora": "19:30", "sala": "Sala 3", "precio": 55.00, "asientosOcupados": ["F1", "F2", "F3", "G1"] },
+
+    { "id": 401, "peliculaId": 4, "hora": "17:15", "sala": "Sala 1", "precio": 50.00, "asientosOcupados": ["D1", "D2", "E1"] },
+
+    { "id": 501, "peliculaId": 5, "hora": "16:45", "sala": "Sala 3", "precio": 40.00, "asientosOcupados": ["B3", "B4", "B5", "C3"] },
+
+    { "id": 601, "peliculaId": 6, "hora": "17:45", "sala": "Sala 2", "precio": 55.00, "asientosOcupados": ["H1", "H2", "H8"] },
+
+    { "id": 701, "peliculaId": 7, "hora": "22:30", "sala": "Sala 1", "precio": 55.00, "asientosOcupados": ["A3", "A4", "E7", "E8"] },
+
+    { "id": 801, "peliculaId": 8, "hora": "22:15", "sala": "Sala 3", "precio": 45.00, "asientosOcupados": ["G6", "G7", "H4"] }
+  ]
+}
