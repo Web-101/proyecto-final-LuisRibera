@@ -1,7 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const idFuncion = params.get('id_funcion');
 let funcionActual = null;
-let posterPelicula = '';
 
 const seleccionados = [];
 
@@ -12,8 +11,6 @@ async function iniciarAsientos() {
         return;
     }
     const pelicula = await obtenerPelicula(funcionActual.peliculaId);
-    posterPelicula = pelicula.poster;
-    document.querySelector('.btn_volver').href = `funciones_2.html?id=${funcionActual.peliculaId}`;
     document.querySelector('.titulo_pelicula_pequeño').textContent = pelicula.titulo;
     document.querySelector('.subtitulo_sala_hora').textContent = `${funcionActual.sala} - ${funcionActual.hora} hs`;
 
@@ -74,7 +71,7 @@ function actualizarResumen() {
     document.getElementById('contador_entradas').textContent = cantidad;
     document.getElementById('monto_total').textContent = (cantidad * funcionActual.precio).toFixed(2);
 
-    
+
     const texto = document.getElementById('asientos_seleccionados');
     if (cantidad === 0) {
         texto.textContent = 'Selecciona tus asientos';
@@ -98,8 +95,7 @@ btnContinuar.addEventListener('click', function(evento) {
         hora: funcionActual.hora,
         asientos: seleccionados,
         precioUnitario: funcionActual.precio,
-        total: seleccionados.length * funcionActual.precio,
-        poster: posterPelicula
+        total: seleccionados.length * funcionActual.precio
     });
 });
 

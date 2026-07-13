@@ -10,3 +10,4 @@ function generarCodigoReserva() {
   }
   return `CINE-${codigo}`;
 }
+
